@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Transaksi Harian"
+        android:textColor="@color/purple_500"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/et_empID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:inputType="number"
+        android:hint="Trans ID" />
+
+    <EditText
+        android:id="@+id/et_empname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:inputType="number"
+
+        android:hint="Rek ID" />
+
+    <EditText
+        android:id="@+id/et_empPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_margin="10dp"
+        android:hint="Uang Masuk" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_gravity="end"
+        android:layout_marginEnd="10dp"
+        android:layout_width="wrap_content"
+        android:text="Tambah Rekening"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_insert"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:text="insert"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="update" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:text="delete"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn_read"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:text="readdd"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <ListView
+        android:layout_margin="10dp"
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>
+
+
+
